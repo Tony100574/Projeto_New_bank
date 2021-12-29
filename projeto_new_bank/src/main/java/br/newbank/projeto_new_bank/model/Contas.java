@@ -10,10 +10,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Contas")
 public class Contas {
-    @Id 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
+
     @Column(name = "titular", length = 250, nullable = false)
     private String titular;
 
@@ -23,13 +23,13 @@ public class Contas {
     @Column(name = "numero", nullable = false)
     private int numero;
 
-    @Column(name = "agencia")
+    @Column(name = "agencia", nullable = false)
     private int agencia;
 
     @Column(name = "saldo", nullable = false)
     private double saldo;
 
-    @Column(name = "Tipo De Conta", length = 50, nullable = false)
+    @Column(name = "tipo_de_conta", length = 50, nullable = false)
     private String tipoDeConta;
 
     public long getId() {
@@ -88,5 +88,4 @@ public class Contas {
         this.tipoDeConta = tipoDeConta;
     }
 
-    
 }
