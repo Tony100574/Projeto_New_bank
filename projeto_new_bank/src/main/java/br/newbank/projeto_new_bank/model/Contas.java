@@ -20,11 +20,11 @@ public class Contas {
     @Column(name = "email", length = 100, nullable = false, unique = true)
     private String email;
 
-    @Column(name = "numero", nullable = false)
-    private int numero;
+    @Column(name = "numero",length = 10, nullable = false)
+    private String numero;
 
-    @Column(name = "agencia", nullable = false)
-    private int agencia;
+    @Column(name = "agencia", length = 5, nullable = false)
+    private String agencia;
 
     @Column(name = "saldo", nullable = false)
     private double saldo;
@@ -56,19 +56,19 @@ public class Contas {
         this.email = email;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public int getAgencia() {
+    public String getAgencia() {
         return agencia;
     }
 
-    public void setAgencia(int agencia) {
+    public void setAgencia(String agencia) {
         this.agencia = agencia;
     }
 
