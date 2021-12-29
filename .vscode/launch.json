@@ -1,14 +1,14 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Spring Boot-ProjetoNewBankApplication<projeto_new_bank>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "br.newbank.projeto_new_bank.ProjetoNewBankApplication",
-            "projectName": "projeto_new_bank",
-            "args": ""
-        }
-    ]
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ProjetoNewBankApplication<projeto_new_bank>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "br.newbank.projeto_new_bank.ProjetoNewBankApplication",
+      "projectName": "projeto_new_bank",
+      "args": ""
+    }
+  ]
 }
