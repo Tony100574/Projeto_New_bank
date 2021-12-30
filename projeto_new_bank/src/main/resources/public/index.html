@@ -6,24 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    <h1>Cadastro</h1>
-    <form method="post">
-      Ag:<input type="text" value="" name="agencia" /> Nome:<input
-        type="text"
-        value=""
-        name="titular"
-      />
-      Email:<input type="email" value="" name="email" /> Número:<input
-        type="text"
-        value=""
-        name="numero"
-      />
+    <link src="http://ajax.microsoft.com/ajax/jquery/jquery-1.5.min.js"></link>
 
-      <a href="http://localhost:8080/contas"
-        ><button class="list">Listar todos</bottom></a
-      >
-    </form>
+    <script >
+      $(document).ready(function(){
+        S("#btn").click(function(){
+          $.get("http://localhost:8080/contas.php", function(data,status){
+            console.log (JSON.parse(data));
+
+            var data=JSON.parse(data);
+            
+            data.forEach(function(dt){
+              $("#tdata").append("<tr>"+
+                "<td>" + dt.titular+"<td>"+ 
+                "<td>" + dt.email+"<td>"+ 
+                "<td>" + dt.numero+"<td>"+ 
+                "<td>" + dt.agencia+"<td>"+ 
+                "<td>" + dt.saldo+"<td>"+ 
+                "<td>" + dt.tipoDeConta+"<td>"
+                  +"</tr>"
+                );
+            });
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    
+   
+      <table class="table">
+        <thead>
+          <tr>titular</tr>
+          <tr>email</tr>
+          <tr>numero</tr> 
+          <tr>agencia</tr>
+          <tr>saldo</tr>
+          <tr>tipoDeConta</tr>
+        </thead>
+    <tbody id="tdata"></tbody>
+      </table>
+      <button class="btn" id="btn">Get</bottom>
   </body>
 </html>
