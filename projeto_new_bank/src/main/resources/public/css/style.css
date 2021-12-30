@@ -81,8 +81,22 @@ header ul li a {
 
 /* Elementos de classe "content", "textBox" de tag <h2>, <span> */
 .content .textbox h2 span {
-  color: #9758cb;
+  color: #106eb0;
   font-size: 1.2em;
+  font-weight: 900;
+}
+/* Elementos de classe "content", "textBox" de tag <h2> */
+.content .textbox h3 {
+  color: #222;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+/* Elementos de classe "content", "textBox" de tag <h2>, <span> */
+.content .textbox h3 span {
+  color: #cba358;
   font-weight: 900;
 }
 
@@ -148,7 +162,7 @@ button {
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
   margin-bottom: 0.2em;
-  color: #9758cb;
+  color: #106eb0;
   display: block;
 }
 
@@ -164,7 +178,7 @@ fieldset.grupo .campo {
 .campo select,
 .campo textarea {
   padding: 0.2em;
-  border: 1px solid #9758cb;
+  border: 1px solid #106eb0;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
 }
@@ -184,7 +198,7 @@ fieldset.grupo .campo {
 /* Elemento de classe "botao" */ /* Elemento de classe "botao" */
 .botao {
   font-size: 1.2em;
-  background: #9758cb;
+  background: #106eb0;
   border: 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -222,7 +236,7 @@ select {
 
 /*footer*/
 footer {
-  background: #9758cb;
+  background: #cba358;
   padding-top: 25px;
   padding-bottom: 25px;
   color: #fff;
