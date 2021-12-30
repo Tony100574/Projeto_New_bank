@@ -13,33 +13,32 @@ import org.springframework.web.bind.annotation.RestController;
 import br.newbank.projeto_new_bank.model.Contas;
 import br.newbank.projeto_new_bank.repository.ContaRepo;
 
+@org.springframework.stereotype.Controller
 @RestController
 @CrossOrigin("*")
 @RequestMapping("/contas")
 
 public class ContaController {
-    
-@Autowired
-private ContaRepo repositorioContas;
 
-@GetMapping()
-public List<Contas> consultaTodas(){
-    List<Contas> listaContas = (List<Contas>) repositorioContas.findAll();
-    return listaContas;
-}
+    @Autowired
+    private ContaRepo repositorioContas;
 
-@GetMapping("/{id}")
+    @GetMapping("")
+    public List<Contas> consultaTodas() {
+        List<Contas> listaContas = (List<Contas>) repositorioContas.findAll();
+        return listaContas;
+    }
+
+    @GetMapping("/{id}")
     public ResponseEntity<Contas> buscarConta(@PathVariable long id) {
-        
+
         Contas contaEncontrada = repositorioContas.findById(id).orElse(null);
 
         if (contaEncontrada != null) {
             return ResponseEntity.ok(contaEncontrada);
         }
 
-        return ResponseEntity.notFound().build(); 
+        return ResponseEntity.notFound().build();
     }
-
-
 
 }
