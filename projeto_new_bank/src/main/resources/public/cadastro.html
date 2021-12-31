@@ -23,7 +23,6 @@
 
 <body>
     <!--Só para funcionar a conexão com o JSON-->
-    <div id="myData"></div>
 
     <div class="space">
         <!-- Barra de Navegação -->
@@ -104,12 +103,22 @@
     </form>
 
     <div class="campoConsultaContas">
-        <button onclick="appendData(data)" type="button"> Consultar as contas </button>
+        <button onclick="getInfoBd()" type="button"> Consultar as contas </button>
+    </div>
+
+    <div class="campoConsultaPorId">
+        <input type="number" idCliente>
+        <button onclick="showForId()" type="button"> Consultar por Id</button>
+    </div>
+
+    <div id="myData"></div>
+    <div id="myData2">
+        <p></p>
     </div>
 
     <!-- Início do footer footer-content -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-content ">
             <p>© 2021 - New Bank </p><br>
     </footer>
 
