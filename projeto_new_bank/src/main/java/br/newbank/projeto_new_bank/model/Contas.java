@@ -5,7 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "Contas")
@@ -14,23 +18,16 @@ public class Contas {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "titular", length = 250, nullable = false)
-    private String titular;
-
-    @Column(name = "email", length = 100, nullable = false, unique = true)
-    private String email;
-
-    @Column(name = "numero",length = 10, nullable = false)
-    private String numero;
-
-    @Column(name = "agencia", length = 5, nullable = false)
-    private String agencia;
+    @Column(name = "tipo_de_conta", length = 50, nullable = false)
+    private String tipoDeConta;
 
     @Column(name = "saldo", nullable = false)
     private double saldo;
 
-    @Column(name = "tipo_de_conta", length = 50, nullable = false)
-    private String tipoDeConta;
+    @ManyToOne // N:1 = cada conta de um proprietário, mas um proprietário pode ter várias contas
+    @JoinColumn(name = "id_clientes")
+    @JsonIgnoreProperties("contas") // para cada proprietário, não traga a lista de contas 
+    public Clientes owner; //owner = proprietario
 
     public long getId() {
         return id;
@@ -38,46 +35,6 @@ public class Contas {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getTitular() {
-        return titular;
-    }
-
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
-    public String getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(String agencia) {
-        this.agencia = agencia;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
     }
 
     public String getTipoDeConta() {
@@ -88,4 +45,21 @@ public class Contas {
         this.tipoDeConta = tipoDeConta;
     }
 
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Clientes getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Clientes owner) {
+        this.owner = owner;
+    }
+
+    
 }
