@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link src="http://ajax.microsoft.com/ajax/jquery/jquery-1.5.min.js"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+   
+  </head>
+
+  <body>
+    
+    <table class="table table-striped">
+      <tr class="bg-info">
+        <th>ID</th>
+        <th>NAME</th>
+        <th>Email</th>
+        <th>numero</th>
+        <th>agencia</th>
+        <th>saldo</th>
+        <th>tipoDeConta</th>
+      </tr>
+    
+      <tbody id="myTable"></tbody>
+    </table>
+    
+    <script>
+      var myArray = []
+    
+      $.ajax({
+        method: 'GET',
+        url: 'http://localhost:8080/contas',
+        success: function (response) {
+          myArray = response.data
+          buildTable(myArray)
+          console.log(myArray)
+        }
+      })
+    
+      function buildTable(data) {
+        var table = document.getElementById('myTable')
+    
+        for (var i = 0; i < data.length; i++) {
+          var row = `<tr>
+                  <td>${data[i].id}</td>
+                  <td>${data[i].titular}</td>
+                  <td>${data[i].email}</td>
+                  <td>${data[i].numero}</td>
+                  <td>${data[i].agencia}</td>
+                  <td>${data[i].saldo}</td>
+                  <td>${data[i].tipoDeConta}</td>
+                </tr>`
+          table.innerHTML += row
+        }
+      }
+    </script>
+    
+  </body>
+</html>

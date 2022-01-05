@@ -51,7 +51,7 @@
     </div>
     
 <!-- Início do formulário onSubmit bre caixa de dialogo para confirmar -->
-<form id="formulario" onSubmit="return confirm('Deseja enviar o formulário?')" >
+<form id="formulario" method="post" onSubmit="return confirm('Deseja enviar o formulário?')" >
     <fieldset class="grupo">
         <!-- Campo do nome com legenda "titular" e css de classe "campo" -->
             <div class="campo">
@@ -69,14 +69,18 @@
     <fieldset class="grupo">
         <!-- Campo de CPF com legenda "Ag" e css de classe "campo-->
             <div class="campo">
-                <label for="ag"><strong>Ag *</strong></label>
-                <input type="text" name="ag" id="ag" placeholder="0000-0" pattern="[0-9]{4}-[0-9]{1}"required>
+                <label for="agencia"><strong>Ag *</strong></label>
+                <input type="text" name="agencia" id="agencia" placeholder="0000-0" pattern="[0-9]{4}-[0-9]{1}"required>
             </div>
 
         <!-- Campo de RG com legenda "RG" e css de classe "campo-->
             <div class="campo">
                 <label for="conta"><strong>Número da conta *</strong></label>
-                <input type="text" name="conta" id="conta" placeholder="00000-0" pattern="[0-9]{5}-[0-9]{1}"required>                    
+                <input type="text" name="tipoDeContaconta" id="tipoDeContaconta" placeholder="00000-0" pattern="[0-9]{5}-[0-9]{1}"required>                    
+            </div>
+            <div class="campo">
+                <label for="conta"><strong>Saldo *</strong></label>
+                <input type="text" name="saldo" id="saldo" placeholder="0" >                    
             </div>
     </fieldset>
 

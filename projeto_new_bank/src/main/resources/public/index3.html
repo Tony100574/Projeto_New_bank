@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src=" //cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  </head>
+
+  <body>
+    <table class="datatable">
+      <tr role="row">
+        <th>ID</th>
+        <th>titular</th>
+        <th>Email</th>
+        <th>numero</th>
+        <th>agencia</th>
+        <th>saldo</th>
+        <th>tipoDeConta</th>
+      </tr>
+
+      <tbody id="myTable"></tbody>
+    </table>
+
+    <script>
+      var myArray = []
+
+      $(document).ready(function () {
+        $('#myTable').DataTable({
+          ajax: {
+            url: 'http://localhost:8080/contas',
+            data
+          },
+          columns: [
+            { data: id },
+            { data: 'titular' },
+            { data: 'email' },
+            { data: 'numero' },
+            { data: 'agencia' },
+            { data: 'saldo' },
+            { data: 'tipoDeConta' }
+          ]
+        })
+      })
+    </script>
+  </body>
+</html>
