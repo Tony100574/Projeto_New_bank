@@ -1,0 +1,57 @@
+{ "data" :[
+  { 
+    "id": 1,
+    "titular": "Ananda Elias",
+    "email": "ananda.elias@email.com",
+    "numero": "11111-1",
+    "agencia": "001-1",
+    "saldo": 0,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  {
+    "id": 2,
+    "titular": "Andre Esposito",
+    "email": "andre.esposito@email.com",
+    "numero": "22222-2",
+    "agencia": "002-2",
+    "saldo": 0.01,
+    "tipoDeConta": "1 - Conta Poupanca"
+  },
+  {
+    "id": 3,
+    "titular": "Beatrice Rocha",
+    "email": "beatrice.rocha@email.com",
+    "numero": "33333-3",
+    "agencia": "003-3",
+    "saldo": 0.02,
+    "tipoDeConta": "2 - Conta Investimento"
+  },
+  {
+    "id": 4,
+    "titular": "Carlos Silva",
+    "email": "carlos.silva@email.com",
+    "numero": "44444-4",
+    "agencia": "004-4",
+    "saldo": 0.03,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  {
+    "id": 5,
+    "titular": "Antonio Silva",
+    "email": "antonio.silva@email.com",
+    "numero": "55555-5",
+    "agencia": "005-5",
+    "saldo": 0.1,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  {
+    "id": 6,
+    "titular": "Barbara junior",
+    "email": "barbara.junior@email.com",
+    "numero": "003-2",
+    "agencia": "11090",
+    "saldo": 300,
+    "tipoDeConta": "2 - conta investimento"
+  }
+]
+}
