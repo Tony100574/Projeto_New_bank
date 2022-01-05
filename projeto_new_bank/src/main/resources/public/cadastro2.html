@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" media="screen" >
+   
+    <title>Cadastro Pessoal</title>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(124, 118, 115), rgba(22, 22, 21, 0.822));
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(223, 96, 23, 0.877);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+}
+legend{
+    border: 1px solid rgba(36, 12, 168, 0.911);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(34, 30, 255, 0.63);
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    size: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 3, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+</style>
+
+         
+</head>
+
+
+<body>
+    <div class="box">
+        <form action = "cadastro2.php">
+            <fieldset>
+                <legend><b>Cadastro New Bank</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="titular" id="titular" class="inputUser" required>
+                    <label for="titular" class="labelInput">Titular</label>
+                </div> <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput"> E-mail</label>
+                </div> <br><br>
+
+                <div class="inputBox">
+                    <input type="number" name="numero" id="Numero da conta" class="inputUser" required>
+                    <label for="numero" class="labelInput">Numero da conta</label>
+                </div> <br><br>
+                
+                <div class="inputBox">
+                    <input type="text" name="agencia" id="agencia" class="inputUser" required>
+                    <label for="agencia" class="labelInput">Agencia</label>
+                </div> <br><br>
+
+                <div class="inputBox">
+                    <input type="number" name="numero" id="numero" class="inputUser" required>
+                    <label for="numero" class="labelInput">Numero Conta</label>
+                </div> <br><br>
+
+                <div class="inputBox">
+                    <input type="number" name="saldo" id="saldo" class="inputUser" required>
+                    <label for="saldo" class="labelInput">Saldo de abertura</label>
+                </div> <br><br>
+
+                <p>Tipo de Conta:</p>
+                <div class="campo" > <label> <strong> Conta: </strong> </label>
+                    <select  id="Conta">
+                    <option selected disabled value=""> Selecione uma opção</option>
+                    <option value="ContaCorrente">0-Conta Corrente</option>
+                    <option value="ContaPoipanca">1-Conta Poupança</option>
+                    <option value="ContaInvestimento">2-Conta Investimento</option>
+
+                    
+
+                <div class="inputBox">
+                    <input type="number" name="saldocidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+
+                
+             
+
+                
+                <br><br>
+
+                <button onclick="valida()" type="submit" name="submit" id="submit" > Enviar </button>
+             
+
+            </fieldset>
+        </form>
+    </div>
+
+
+
+    
+</body>
+
+<script>
+
+function valida() {
+
+var nome = document.getElementById("nomeid");
+
+if (nome.value != "") {
+    alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+}
+
+}
+
+
+</script>
+
+</html>
