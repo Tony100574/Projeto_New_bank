@@ -2,7 +2,7 @@
 
 # Sobre o Projeto
 <p> Nosso projeto é uma API que gerencia contas bancárias. Nela é possível consultar os cadastros de todos os clientes, fazer consulta específica de algum cliente,
-criar cadastro, atualizar algum cadastro já existente e, deletar. Nós também conectamos essa API com front-end, sendo possível assim a visualização de todos os cadastros em um site.</p>
+criar cadastro, atualizar algum cadastro já existente e deletar. Nós também conectamos essa API com front-end, sendo possível assim a visualização de todos os cadastros em um site.</p>
 
 # Índice/Sumário
 
