@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <!-- Metadados-->
@@ -25,18 +25,6 @@
     <!--Só para funcionar a conexão com o JSON-->
 
     <div class="space">
-        <!-- Barra de Navegação -->
-        <!-- Pode tirar ja que não terá outras páginas
-        <header>
-            <a href="#"> <img src="img/logo.png" class="logo"></a>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Sobre.html"> Sobre Nós</a></li>
-                <li><a href="./Contato.html"> Contato </a></li>
-                <li><a href="./SaibaMais.html"> Saiba Mais </a></li>
-            </ul>
-        </header>
-        -->
 
         <!-- Slogan (Poderíamos criar algo pá pum, ficaria demais!!!)-->
         <div class="content">
@@ -56,61 +44,12 @@
         <h3>Cadastro de usuário</h3>
     </div>
 
-    <!-- Início do formulário onSubmit abre caixa de dialogo para confirmar -->
-    <form id="formulario" onSubmit="return confirm('Deseja enviar o formulário?')" autocomplete="off">
-        <fieldset class="grupo">
-            <!-- Campo do nome com legenda "titular" e css de classe "campo" -->
-            <div class="campo">
-                <label for="titular"><strong>Nome do titular *</strong></label>
-                <input type="text" name="titular" id="titular" placeholder="Digite seu nome" required>
-            </div>
-
-            <!-- Campo de email com legenda "email" e css de classe "campo-->
-            <div class="campo">
-                <label for="email"><strong>Email *</strong></label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-            </div>
-        </fieldset>
-
-        <fieldset class="grupo">
-            <!-- Campo de CPF com legenda "Ag" e css de classe "campo-->
-            <div class="campo">
-                <label for="ag"><strong>Ag *</strong></label>
-                <input type="text" name="ag" id="ag" placeholder="0000" pattern="[0-9]{4}" required>
-            </div>
-
-            <!-- Campo de RG com legenda "RG" e css de classe "campo-->
-            <div class="campo">
-                <label for="conta"><strong>Número da conta *</strong></label>
-                <input type="text" name="conta" id="conta" placeholder="00000-0" pattern="[0-9]{5}-[0-9]{1}" required>
-            </div>
-        </fieldset>
-
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="tipo"><strong>Tipo da conta:</strong> </label>
-                <select>
-                    <option selected disabled value=" ">Selecione</option>
-                    <option value="0 - Conta Corrente">0 - Conta Corrente</option>
-                    <option value="1 - Conta Poupanca">1 - Conta Poupanca</option>
-                    <option value="2 - Conta Investimento">2 - Conta Investimento</option>
-                </select>
-            </div>
-        </fieldset>
-
-        <!-- Botão para enviar o formulário -->
-        <button class="botao" type="submit">Enviar</button>
-    </form>
-
-    <div class="campoConsultaContas">
-        <button onclick="getInfoBd()" type="button"> Consultar as contas </button>
+    <div class="campo">
+        <a href="http://localhost:8080/contas/"><button class="botao" type="button"> Consultar JSON </button></a>
     </div>
-
-    <div class="campoConsultaPorId">
-        <input type="number" idCliente>
-        <button onclick="showForId()" type="button"> Consultar por Id</button>
+    <div class="campo">
+        <a href="tabela.html"><button class="botao" type="button"> Consultar Tabela </button></a>
     </div>
-
     <div id="myData"></div>
     <div id="myData2">
         <p></p>
