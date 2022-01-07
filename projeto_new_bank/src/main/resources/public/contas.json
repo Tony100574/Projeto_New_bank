@@ -1,5 +1,5 @@
-[
-  {
+{ "data" :[
+  { 
     "id": 1,
     "titular": "Ananda Elias",
     "email": "ananda.elias@email.com",
@@ -52,5 +52,15 @@
     "agencia": "11090",
     "saldo": 300,
     "tipoDeConta": "2 - conta investimento"
+  },
+  { 
+    "id": 1,
+    "titular": "Ananda Elias",
+    "email": "ananda.elias@email.com",
+    "numero": "11111-1",
+    "agencia": "001-1",
+    "saldo": 0,
+    "tipoDeConta": "0 - Conta Corrente"
   }
 ]
+}
