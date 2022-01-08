@@ -38,15 +38,15 @@ criar cadastro, atualizar algum cadastro já existente e deletar. Nós também c
 
 # Tecnologias Usadas
 - [JAVA]
-- [SpringBoot]
 - [C#]
+- [HTML]
+- [CSS]
+- [SpringBoot]
 - [Entity Framework]
 - [.NET Framework]
 - [Connector/NET]
 - [REPL]
 - [NuGet Package]
-- [HTML]
-- [CSS]
 - [MySQL]
 - [Thunder Client]
 
