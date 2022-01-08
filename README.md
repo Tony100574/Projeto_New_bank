@@ -5,6 +5,13 @@
 criar cadastro, atualizar algum cadastro já existente e deletar. Nós também conectamos essa API com front-end, sendo possível assim a visualização de todos os cadastros em um site.</p>
 
 # Índice/Sumário
+* [Sobre](#sobre-o-projeto)
+* [Sumário](#índice/sumário)
+* [Requisitos Propostos](#requisitos-propostos)
+* [Requisitos Executados](#requisitos-executados)
+* [Tecnologias Usadas](#tecnologias-usadas)
+* [Autores](#autores)
+* [Agradecimentos](#agradecimentos)
 
 # Requisitos Propostos 
 - [x] **Endpoint GET (Consultar todas as contas)**
