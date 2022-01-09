@@ -9,7 +9,7 @@
 
 /* Elemento classe space entre barra de navegação e slogan */
 .space {
-  padding-top: 200px;
+  padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
@@ -81,22 +81,22 @@ header ul li a {
 
 /* Elementos de classe "content", "textBox" de tag <h2>, <span> */
 .content .textbox h2 span {
-  color: #106eb0;
+  color: #003380;
   font-size: 1.2em;
   font-weight: 900;
 }
 /* Elementos de classe "content", "textBox" de tag <h2> */
 .content .textbox h3 {
   color: #222;
-  font-size: 2.5em;
-  line-height: 1.2em;
+  font-size: 2em;
+  line-height: 1em;
   font-weight: 500;
   margin-left: 50px;
 }
 
 /* Elementos de classe "content", "textBox" de tag <h2>, <span> */
 .content .textbox h3 span {
-  color: #cba358;
+  color: #ff3300;
   font-weight: 900;
 }
 
@@ -125,6 +125,7 @@ header ul li a {
   font-size: 3em;
   text-align: center;
   color: #333;
+  margin-bottom: 25px;
 }
 
 /* Elementos de tag <fieldset>*/
@@ -162,7 +163,7 @@ button {
 /* Elementos de classe "campo" de tag <label> */
 .campo label {
   margin-bottom: 0.2em;
-  color: #106eb0;
+  color: #003380;
   display: block;
 }
 
@@ -178,7 +179,7 @@ fieldset.grupo .campo {
 .campo select,
 .campo textarea {
   padding: 0.2em;
-  border: 1px solid #106eb0;
+  border: 1px solid #003380;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
 }
@@ -192,17 +193,17 @@ fieldset.grupo .campo {
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
-  background: #f2dffb;
+  background: #4b93ff;
 }
 
 /* Elemento de classe "botao" */ /* Elemento de classe "botao" */
 .botao {
   font-size: 1.2em;
-  background: #106eb0;
+  background: #003380;
   border: 0;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #e1e1e6;
+  color: #fff;
   padding: 0.2em 0.6em;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -215,7 +216,7 @@ fieldset.grupo .campo {
 
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
-  background: #ccbbff;
+  background: #4b93ff;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: none;
 }
@@ -236,7 +237,7 @@ select {
 
 /*footer*/
 footer {
-  background: #cba358;
+  background: #ff3300;
   padding-top: 25px;
   padding-bottom: 25px;
   color: #fff;
