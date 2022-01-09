@@ -54,13 +54,94 @@
     "tipoDeConta": "2 - conta investimento"
   },
   { 
-    "id": 1,
-    "titular": "Ananda Elias",
-    "email": "ananda.elias@email.com",
+    "id": 7,
+    "titular": "Ana Silva",
+    "email": "ana.silva@email.com",
     "numero": "11111-1",
     "agencia": "001-1",
     "saldo": 0,
     "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 8,
+    "titular": "José Silva",
+    "email": "josé.silva@email.com",
+    "numero": "11122-1",
+    "agencia": "001-1",
+    "saldo": 1000,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 9,
+    "titular": "José Silva",
+    "email": "josé.silva@email.com",
+    "numero": "11121-1",
+    "agencia": "002-1",
+    "saldo": 2000,
+    "tipoDeConta": "2 - conta investimento"
+  },
+  { 
+    "id": 9,
+    "titular": "João Souza",
+    "email": "joão.souza@email.com",
+    "numero": "11321-1",
+    "agencia": "032-1",
+    "saldo": 2000,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 10,
+    "titular": "Maria Souza",
+    "email": "maria.souza@email.com",
+    "numero": "11421-1",
+    "agencia": "042-1",
+    "saldo": 2000,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 11,
+    "titular": "Gustavo Oliveira",
+    "email": "gustavo.oliveira@email.com",
+    "numero": "11521-1",
+    "agencia": "052-1",
+    "saldo": 2500,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 12,
+    "titular": "Ana Oliveira",
+    "email": "ana.oliveira@email.com",
+    "numero": "11531-1",
+    "agencia": "032-1",
+    "saldo": 2500,
+    "tipoDeConta": "0 - Conta Corrente"
+  },
+  { 
+    "id": 13,
+    "titular": "Maria Oliveira",
+    "email": "maaria.oliveira@email.com",
+    "numero": "11631-1",
+    "agencia": "062-1",
+    "saldo": 2500,
+    "tipoDeConta": "1 - Conta Poupanca"
+  },
+  { 
+    "id": 14,
+    "titular": "Ana Barros",
+    "email": "ana.barros@email.com",
+    "numero": "11631-1",
+    "agencia": "062-1",
+    "saldo": 2500,
+    "tipoDeConta": "1 - Conta Poupanca"
+  },
+  { 
+    "id": 15,
+    "titular": "Thiago Barros",
+    "email": "thiago.barros@email.com",
+    "numero": "11881-1",
+    "agencia": "088-1",
+    "saldo": 2500,
+    "tipoDeConta": "1 - Conta Poupanca"
   }
 ]
 }
